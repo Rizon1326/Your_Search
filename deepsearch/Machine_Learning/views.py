@@ -2,7 +2,9 @@ from django.shortcuts import render
 from django.http import HttpResponse
 # Create your views here.
 def machine_learning(request):
-    return HttpResponse('<h1>Machine Learning</h1>')
+    means={'what':'Transforming data into intelligence, one algorithm at a time!'}
+    return render(request, 'machine_learning/intro.html',context=means)
 
 def about(request):
-    return HttpResponse('<h1>🤖 Machine Learning</h1> <p>Our Django-based Machine Learning project leverages predictive modeling and data-driven insights to solve real-world problems efficiently.</p>')
+    about_ml={'what':'Machine Learning is a subset of Artificial Intelligence that focuses on the development of computer programs that can access data and use it to learn for themselves.'}
+    return render(request, 'machine_learning/about.html',context=about_ml)

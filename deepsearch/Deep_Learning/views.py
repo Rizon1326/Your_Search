@@ -2,7 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 # Create your views here.
 def deep_learning(request):
-    return HttpResponse('<h1>Deep learning is a subset of machine learning that uses deep neural networks to automatically learn patterns from large amounts of data for tasks like image recognition, NLP, and automation. 🚀</h1>')
-
+    intro= {'what':'Deep Learning is a subset of Machine Learning that focuses on the development of computer programs that can access data and use it to learn for themselves.'}
+    return render(request, 'deep_learning/intro.html',context=intro)
 def about(request):
-    return HttpResponse('<h1>🧠 Deep Learning</h1><p>This Django-powered Deep Learning project utilizes neural networks to automate complex tasks like image recognition and natural language processing.</p>')
+    about={'what':'This Django-powered Deep Learning project utilizes neural networks to automate complex tasks like image recognition and natural language processing.'}
+    return render(request, 'deep_learning/about.html',context=about)
