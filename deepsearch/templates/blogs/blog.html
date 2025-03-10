@@ -1,18 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>📝 Blog1 – Our First Blog</h1>
 
-    {% if st == 'Data Scientist' %}
-        <p>Welcome, Data Scientist! 🚀</p>
-    {% endif %}
+{% extends 'common_code/base.html' %}
 
-    <h1> You are welcome</h1>
-    <p><strong>{{ p|capfirst }} {{ f }} {{ s }}</strong> 🎉</p>
-</body>
-</html>
+{% block title %} Blogs {% endblock title %}
+
+{% block alert %}
+    <div class="alert alert-primary" role="alert">
+        <h1>📝 Blog1 – Our First Blog</h1>
+    </div>
+{% endblock alert %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h2>📝 Blog1 – Our First Blog</h2>
+                <p>🚀 This is our first blog. We are excited to share our thoughts with you. Stay tuned for more blogs.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>📅 Date</h3>
+                <p>📆 2021-08-01</p>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+

@@ -1,14 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>🤖 Machine Learning and 🧠 Deep Learning</h1>
-    <h2>🚀 Real-World Application</h2>
-    <p>{{what}}</p>
-</body>
+{% extends 'common_code/base.html' %}
 
-</html>
+{% block title %} About {% endblock title %}
+{% block alert %}
+    <div class="alert alert-primary" role="alert">
+        <h1>🤖 Machine learning and deep learning are subsets of artificial intelligence that enable computers to learn from data and make predictions or decisions. 📊</h1>
+    </div>
+{% endblock alert %}
+{% block content %}
+<div class="container">
+    <h2>🤖 Machine Learning</h2>
+    <p>Machine learning is a branch of artificial intelligence that focuses on building systems that can learn from and make decisions based on data. It involves training algorithms on large datasets to recognize patterns and make predictions.</p>
+    
+    <h3>📚 Types of Machine Learning</h3>
+    <ul>
+        <li><strong>Supervised Learning:</strong> The algorithm is trained on labeled data, meaning that each training example is paired with an output label.</li>
+        <li><strong>Unsupervised Learning:</strong> The algorithm is given data without explicit instructions on what to do with it. It must find patterns and relationships in the data.</li>
+        <li><strong>Reinforcement Learning:</strong> The algorithm learns by interacting with an environment and receiving rewards or penalties based on its actions.</li>
+    </ul>
+    
+    <h2>🧠 Deep Learning</h2>
+    <p>Deep learning is a subset of machine learning that uses neural networks with many layers (hence the term "deep") to analyze various types of data. It is particularly effective for tasks such as image and speech recognition.</p>
+    
+    <h3>🌟 Applications of Deep Learning</h3>
+    <ul>
+        <li><strong>Image Recognition:</strong> 📸 Used in applications such as facial recognition and object detection.</li>
+        <li><strong>Natural Language Processing:</strong> 🗣️ Enables machines to understand and respond to human language, used in chatbots and language translation.</li>
+        <li><strong>Autonomous Vehicles:</strong> 🚗 Helps self-driving cars to recognize objects and make driving decisions.</li>
+    </ul>
+</div>
+{% endblock content %}

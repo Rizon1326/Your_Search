@@ -1,14 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>🤖 Deep Learning – The Power of AI Unleashed! 🚀</h1>
-    
-    <P>{{what}}</P>
-</body>
+{% extends 'common_code/base.html' %}
 
-</html>
+{% block title %} INtroduction on Deep Learning {% endblock title %}
+
+{% block alert %}
+    <div class="alert alert-info" role="alert"></div>
+        <i class="fas fa-info-circle"></i> Learn more about data analysis and its importance in today's world.
+    </div>
+{% endblock alert %}
+{% block content %}
+<div class="container">
+    <h1>Introduction to Deep Learning</h1>
+    <p>Deep learning is a subset of machine learning in artificial intelligence (AI) that has networks capable of learning from data that is unstructured or unlabeled. Also known as deep neural learning or deep neural network, it is a key technology behind driverless cars, enabling them to recognize a stop sign, or to distinguish a pedestrian from a lamppost. It is the key to voice control in consumer devices like phones, tablets, TVs, and hands-free speakers. Deep learning models can achieve state-of-the-art accuracy, sometimes exceeding human-level performance.</p>
+    <p>In deep learning, a computer model learns to perform classification tasks directly from images, text, or sound. Deep learning models can achieve state-of-the-art accuracy, sometimes exceeding human-level performance. Models are trained by using a large set of labeled data and neural network architectures that contain many layers.</p>
+</div></div>
+</div>
+{% endblock content %}

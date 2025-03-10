@@ -1,13 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>🤖 About - Machine Learning</h1>
-    <p><strong>💡 {{what}}</strong></p>
-</body>
+{% extends 'common_code/base.html' %}
 
-</html>
+{% block title %} About Machine Learning  {% endblock title %}
+
+{% block alert %}
+    <div class="alert alert-info" role="alert"></div>
+        <i class="fas fa-info-circle"></i> Learn more about data analysis and its importance in today's world.
+    </div>
+{% endblock alert %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>Machine Learning <i class="fas fa-robot"></i></h2>
+    <p>Machine Learning (ML) is a subset of artificial intelligence (AI) that focuses on building systems that can learn from and make decisions based on data. It involves algorithms and statistical models to perform tasks without explicit instructions.</p>
+    <h3>Applications of Machine Learning <i class="fas fa-cogs"></i></h3>
+    <ul>
+        <li>Predictive Analytics <i class="fas fa-chart-line"></i></li>
+        <li>Natural Language Processing <i class="fas fa-language"></i></li>
+        <li>Computer Vision <i class="fas fa-eye"></i></li>
+        <li>Recommendation Systems <i class="fas fa-thumbs-up"></i></li>
+    </ul>
+    <h3>Importance of Machine Learning <i class="fas fa-lightbulb"></i></h3>
+    <p>Machine Learning is crucial in today's world as it helps in automating tasks, improving decision-making processes, and providing insights from large datasets. It is widely used in various industries such as healthcare, finance, and technology.</p>
+</div>
+{% endblock content %}

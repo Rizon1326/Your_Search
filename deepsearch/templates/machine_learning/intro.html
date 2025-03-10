@@ -1,13 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>🤖 Machine Learning – Empowering the Future with Intelligent Systems!</h1>
-    <p><strong>💡 {{what}} </strong></p>
-</body>
+{% extends 'common_code/base.html' %}
 
-</html>
+{% block title %} Introduction on Machine Learning {% endblock title %}
+
+{% block alert %}
+    <div class="alert alert-info" role="alert"></div>
+        <i class="fas fa-info-circle"></i> Learn more about data analysis and its importance in today's world.
+    </div>
+{% endblock alert %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>Introduction to Machine Learning</h2>
+    <p>
+        <i class="fas fa-robot"></i> Machine Learning (ML) is a branch of artificial intelligence that focuses on building systems that can learn from and make decisions based on data.
+    </p>
+    <p>
+        <i class="fas fa-chart-line"></i> It involves algorithms and statistical models to perform tasks without explicit instructions, relying on patterns and inference instead.
+    </p>
+    <p>
+        <i class="fas fa-brain"></i> ML is widely used in various applications such as recommendation systems, image and speech recognition, and predictive analytics.
+    </p>
+    <p>
+        <i class="fas fa-cogs"></i> By leveraging ML, businesses can gain insights, automate processes, and improve decision-making.
+    </p>
+</div>
+{% endblock content %}

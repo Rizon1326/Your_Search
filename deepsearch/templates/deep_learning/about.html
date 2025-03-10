@@ -1,13 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>🧠 About - Deep Learning</h1>
-    <p>🚀{{what}}</p>
-</body>
+{% extends 'common_code/base.html' %}
 
-</html>
+{% block title %} About Deep Learning {% endblock title %}
+
+{% block alert %}
+    <div class="alert alert-info" role="alert"></div>
+        <i class="fas fa-info-circle"></i> Learn more about data analysis and its importance in today's world.
+    </div>
+{% endblock alert %}
+{% block content %}
+<div class="content-section"></div>
+    <h2><i class="fas fa-brain"></i> What is Deep Learning?</h2>
+    <p>Deep learning is a subset of machine learning in artificial intelligence (AI) that has networks capable of learning from data that is unstructured or unlabeled. Also known as deep neural learning or deep neural network.</p>
+    
+    <h3><i class="fas fa-cogs"></i> How Does It Work?</h3>
+    <p>Deep learning uses a layered structure of algorithms called an artificial neural network. The design of such a network is inspired by the biological neural network of the human brain, leading to the term "neural network".</p>
+    
+    <h3><i class="fas fa-chart-line"></i> Applications of Deep Learning</h3>
+    <ul>
+        <li><i class="fas fa-robot"></i> Autonomous vehicles</li>
+        <li><i class="fas fa-search"></i> Image and speech recognition</li>
+        <li><i class="fas fa-heartbeat"></i> Healthcare diagnostics</li>
+        <li><i class="fas fa-language"></i> Natural language processing</li>
+    </ul>
+</div>
+{% endblock content %}

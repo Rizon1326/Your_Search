@@ -1,13 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>📊 Data Analysis – Transforming raw data into actionable insights!</h1>
-    <p><strong>💡{{what}}</strong></p>
-</body>
+{% extends 'common_code/base.html' %}
 
-</html>
+{% block title %} Data Analysis {% endblock title %}
+
+{% block alert %}
+<div class="alert alert-info" role="alert"></div>
+    <i class="fas fa-info-circle"></i> This is an informational alert with an icon.
+</div>
+{% endblock alert %}
+
+{% block content %}
+<div class="container"></div>
+    <h2>Data Analysis Overview</h2>
+    <p>Data analysis is the process of inspecting, cleansing, transforming, and modeling data with the goal of discovering useful information, informing conclusions, and supporting decision-making.</p>
+    <ul>
+        <li><i class="fas fa-chart-line"></i> <strong>Data Collection:</strong> Gathering data from various sources.</li>
+        <li><i class="fas fa-database"></i> <strong>Data Cleaning:</strong> Removing errors and inconsistencies from data.</li>
+        <li><i class="fas fa-chart-pie"></i> <strong>Data Transformation:</strong> Converting data into a suitable format for analysis.</li>
+        <li><i class="fas fa-chart-bar"></i> <strong>Data Modeling:</strong> Applying statistical and machine learning models to analyze data.</li>
+        <li><i class="fas fa-lightbulb"></i> <strong>Data Interpretation:</strong> Drawing conclusions and making decisions based on data analysis.</li>
+    </ul>
+</div>
+{% endblock content %}
