@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachers Information</title>
+</head>
+<body>
+    <h1>{{teachers}}</h1>
+    {% if teachers %}
+      <h1>Oi teacher bro ra..!!</h1>
+      <table border="1">
+        <tr>
+          <th>id</th>
+          <th>tid</th>
+          <th>tname</th>
+          <th>temail</th>
+        </tr>
+        {% for teacher in teachers %}
+          <tr>
+            <td>{{teacher.id}}</td>
+            <td>{{teacher.tid}}</td>
+            <td>{{teacher.tname}}</td>
+            <td>{{teacher.temail}}</td>
+          </tr>
+        {% endfor %}
+      </table>
+    {% else %}
+      <h1>Teacher bro ra nai..!!</h1>
+    {% endif %}
+</body>
+</html>

@@ -3,7 +3,8 @@ from django.contrib import admin
 from django.urls import path
 from . import views
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    # path('admin/', admin.site.urls),
     path('abt/',views.about, name='about'),
+    path('teachers/',views.teachers_info),
    
 ]
